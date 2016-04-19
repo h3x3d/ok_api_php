@@ -78,6 +78,10 @@ class Api
             'refresh_token' => $this->refreshToken,
         ]);
 
+        if (isset($response['error'])) {
+            throw new ApiException($response['error']);
+        }
+
         $this->accessToken = $response['access_token'];
 
         return $this->accessToken;

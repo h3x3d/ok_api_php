@@ -1,0 +1,19 @@
+{
+    "name": "h3x3d/ok-api",
+    "type": "library",
+    "keywords": ["Odnoklassniki"],
+    "description": "ok.ru api client",
+    "authors": [
+      {
+        "name": "h3x3d",
+        "email": "h3x3d@ya.ru"
+      }
+    ],
+    "autoload": {
+      "psr-4": { "H3x3d\\Odnoklassniki\\": "src/" }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "^6.2"
+    }
+}

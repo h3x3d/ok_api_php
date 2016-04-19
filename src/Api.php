@@ -139,8 +139,6 @@ class Api
             $this->secretKey :
             md5($this->accessToken . $this->secretKey);
 
-        var_dump($sign);
-
         return md5($sign);
     }
 
@@ -153,7 +151,6 @@ class Api
      */
     private function call($url, array $params)
     {
-        var_dump($params);
         try {
             $response = $this->client->post($url, [
                 'query' => $params,
